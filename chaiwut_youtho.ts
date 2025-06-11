@@ -22,7 +22,7 @@ function getMinMove(start: string, target: string, brokenList: string[]): number
     const queue: [number, number, number][] = []; 
   
     const [startX, startY] = toXY(start);
-    const [targetX, endY] = toXY(target);
+    const [targetX, targetY] = toXY(target);
   
     queue.push([startX, startY, 0]); 
     visited[startX][startY] = true;
